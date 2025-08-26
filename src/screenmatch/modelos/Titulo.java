@@ -6,7 +6,7 @@ public class Titulo {
     private boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
     private int totalDeAvaliacoes;
-    private int duracaoEmMinutoa;
+    private int duracaoEmMinutos;
 
     public int getTotalDeAvaliacoes(){
         return totalDeAvaliacoes;
@@ -20,8 +20,12 @@ public class Titulo {
         this.anoDeLancamento = anoDeLancamento;
     }
 
-    public void setDuracaoEmMinutoa(int duracaoEmMinutoa) {
-        this.duracaoEmMinutoa = duracaoEmMinutoa;
+    public void setDuracaoEmMinutos(int duracaoEmMinutos) {
+        this.duracaoEmMinutos = duracaoEmMinutos;
+    }
+
+    public int getDuracaoEmMinutos() {
+        return duracaoEmMinutos;
     }
 
     public void exibeFichaTecnica() {
