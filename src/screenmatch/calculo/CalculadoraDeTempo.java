@@ -1,15 +1,15 @@
 package screenmatch.calculo;
 
-import screenmatch.modelos.Filme;
+import screenmatch.modelos.Titulo;
 
 public class CalculadoraDeTempo {
-    private int tempoTotal;
+    private int tempoTotal = 0;
 
     public int getTempoTotal() {
-        return tempoTotal;
+        return this.tempoTotal;
     }
 
-    public void inclui(Filme f) {
-        tempoTotal += f.getDuracaoEmMinutos();
+    public void inclui(Titulo titulo) {
+        this.tempoTotal += titulo.getDuracaoEmMinutos();
     }
 }
